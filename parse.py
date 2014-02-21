@@ -16,7 +16,7 @@ class page:
 
 	def remove_italics_bold(self):
 		more_quotes = True
-		for line is self.raw:
+		for line in self.raw:
 			if line.startswith('*') && more_quotes is True:
 				line.replace("''","")
 				line.replace("'''","")
